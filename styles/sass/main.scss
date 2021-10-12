@@ -1,8 +1,7 @@
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
+@import 'config';
+@import 'footer';
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+* {
+    padding: 0;
+    margin: 0;
 }
