@@ -1,4 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+.nav {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 2rem 5rem;
+}
+
+.nav__logo {
+  width: 52px;
+}
+
+.nav__title {
+  font-size: 1.3rem;
+  margin: 32px 0 15px 0;
+  font-weight: 300;
+  color: #969696;
+}
+
+.nav__title-span {
+  color: initial;
+  font-weight: 700;
+}
+
+.nav__paragraph {
+  font-size: 12px;
+}
+
+.form {
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__email {
+  border: 1px solid #c2d3ff;
+  padding: 12px 35px;
+  padding: 12px 35px;
+  border-radius: 25px;
+}
+.form__email::placeholder {
+  color: #c2d3ff;
+  opacity: 0.7;
+}
+
+.form__submit {
+  border: 1px solid #4f7df3;
+  padding: 12px 35px;
+  font-size: 12px;
+  color: #ffffff;
+  background: #4f7df3;
+  padding: 12px 35px;
+  border-radius: 25px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -11,6 +67,24 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.main {
+  width: 100%;
+}
+
+.main__img {
+  width: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */
