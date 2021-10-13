@@ -8,8 +8,3 @@ $neutral-very-dark-blue: hsl(209, 33%, 12%);
 $font-libre-franklin: 'Libre Franklin', sans-serif;
 
 $mobile-input-padding: 12px 35px;
-
-@mixin formInput($color) {
-    border: 1px solid $color;
-    padding: $mobile-input-padding;
-}
