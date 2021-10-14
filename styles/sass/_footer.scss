@@ -11,6 +11,8 @@
     padding: 5.5px;
     color: $primary-blue;
     border: 1px solid rgba(194, 211, 255, .5);
+    text-align: center;
+    vertical-align: middle;
 }
 
 .footer__icon--instagram {
@@ -19,13 +21,16 @@
 }
 
 .footer__copy {
-    font-size: 15px;
+    display: block;
+    font-size: 10px;
     color: $neutral-gray;
+    margin: 30px 0;
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .attribution a {
