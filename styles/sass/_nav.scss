@@ -41,20 +41,20 @@
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-}
-
-.form__errors {
-    text-align: center;
-    margin-bottom: 25px;
+    // background: red;
 }
 
 .form__error {
+    text-align: center;
+    margin-bottom: 25px;
     font-size: 10px;
     color: $secndary-light-red;
 }
 
 .form__email {
     @include formInput($secondary-pale-blue);
+    // width: 265px;
+    width: 100%;
     padding: 12px 35px;
     border-radius: 25px;
     &::placeholder {
@@ -70,6 +70,7 @@
 
 .form__submit {
     @include formInput($primary-blue);
+    width: 100%;
     font-size: 12px;
     color: #ffffff;
     background: $primary-blue;
@@ -78,4 +79,41 @@
     box-shadow: 0px 5px 15px 2px rgba(79,125,243,0.3);
     -webkit-box-shadow: 0px 5px 15px 2px rgba(79,125,243,0.3);
     -moz-box-shadow: 0px 5px 15px 2px rgba(79,125,243,0.3);
+}
+
+@media (min-width: 800px) {
+    .nav__logo {
+        width: 90px;
+    }
+
+    .nav__title {
+        font-size: 2.5rem;
+    }
+
+    .nav__paragraph {
+        font-size: initial;
+    }
+
+    .form {
+        flex-direction: row;
+        width: 550px;
+    }
+
+    .form__email {
+        width: 360px;
+        height: 45px;
+        &::placeholder {
+            font-size: 15px;
+        }
+    }
+
+    .form__submit {
+        font-size: 15px;
+        height: 45px;
+        width: 170px;
+    }
+
+    .form__error {
+        margin: 0;
+    }
 }

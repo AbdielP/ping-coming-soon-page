@@ -28,3 +28,14 @@ body {
 .main__img {
     width: 300px;
 }
+
+@media (min-width: 800px) { 
+
+    .main {
+        margin-bottom: 2rem;
+    }
+
+    .main__img {
+        width: 550px;
+    }
+}

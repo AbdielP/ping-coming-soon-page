@@ -13,14 +13,14 @@
 <!-- 375 x 799  -->
 <body>
 
-    <nav class="nav">
+    <nav class="nav" id="app">
         <img class="nav__logo" src="images/logo.svg">
         <h1 class="nav__title">We are launching <span class="nav__title-span">soon!</span></h1>
         <p class="nav__paragraph">Subscribe and get notified</p>
-        <form class="form" id="app" @submit="checkForm" action="https://vuejs.org/" method="post" novalidate="true">
-            <input v-model="email" class="form__email" :class="{ form__email_error: error }" type="email" id="email" name="email" placeholder="Your email address...">
-            <div class="form__errors" v-if="error">
-                <p class="form__error">Please provide a valid email address</p>
+        <form class="form" @submit="checkForm" action="https://vuejs.org/" method="post" novalidate="true">
+            <div class="form__email-container">
+                <input v-model="email" class="form__email" :class="{ form__email_error: error }" type="email" id="email" name="email" placeholder="Your email address...">
+                <p v-if="error" class="form__error">Please provide a valid email address</p>
             </div>
             <button class="form__submit" type="submit">Notify Me</button>
         </form>
