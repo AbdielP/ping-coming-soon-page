@@ -8,6 +8,7 @@
     <title>Ping coming soon page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/vue"></script>
 </head>
 <!-- 375 x 799  -->
 <body>
@@ -16,9 +17,9 @@
         <img class="nav__logo" src="images/logo.svg">
         <h1 class="nav__title">We are launching <span class="nav__title-span">soon!</span></h1>
         <p class="nav__paragraph">Subscribe and get notified</p>
-        <form class="form" id="app">
-            <input class="form__email" type="email" placeholder="Your email address...">
-            <div class="form__errors">
+        <form class="form" id="app" @submit="checkForm" action="https://vuejs.org/" method="post" novalidate="true">
+            <input v-model="email" class="form__email" :class="{ form__email_error: error }" type="email" id="email" name="email" placeholder="Your email address...">
+            <div class="form__errors" v-if="error">
                 <p class="form__error">Please provide a valid email address</p>
             </div>
             <button class="form__submit" type="submit">Notify Me</button>
@@ -41,7 +42,6 @@
             Coded by <a href="#">Abdiel P. Carrera</a>.
         </p> -->
     </footer>
-    <script src="https://unpkg.com/vue@next"></script>
     <script src="javascript/main.js"></script>
 </body>
 </html>

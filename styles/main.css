@@ -36,7 +36,6 @@
 }
 
 .form__errors {
-  display: none;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -58,7 +57,7 @@
   opacity: 0.7;
 }
 
-.form__email--error {
+.form__email_error {
   border: 1px solid #ff5263;
 }
 

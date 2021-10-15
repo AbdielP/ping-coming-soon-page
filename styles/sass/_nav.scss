@@ -44,7 +44,6 @@
 }
 
 .form__errors {
-    display: none;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -65,7 +64,7 @@
     }
 }
 
-.form__email--error {
+.form__email_error { //Had to use this format for this modifier because of vue :class
     border: 1px solid $secndary-light-red;
 }
 
