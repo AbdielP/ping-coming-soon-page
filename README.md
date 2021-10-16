@@ -31,12 +31,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./captures/desktop.png)
+![](./captures/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-sass-and-vuejs-GYqG24gOR)
+- Live Site URL: [Add live site URL here](https://abdielp.github.io/ping-coming-soon-page/)
 
 ## My process
 
@@ -77,6 +78,8 @@ The site implements responsive web design using media querys
 ```
 The form validation was performed with a simple validation using [Vue.js](https://vuejs.org/) Library.
 This code and regular pattern is an adaptation of the form validation example found in the official library documentation
+
+![](./captures/validation.png)
 
 ```js
 (() => {
