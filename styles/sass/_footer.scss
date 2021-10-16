@@ -8,11 +8,15 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    padding: 6px;
+    padding: 6.5px;
     color: $primary-blue;
     border: 1px solid rgba(194, 211, 255, .5);
     text-align: center;
     vertical-align: middle;
+    &:hover {
+        color: #fff;
+        background: $primary-blue;
+    }
 }
 
 .footer__icon--instagram {
@@ -35,4 +39,10 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) { 
+    .footer__social-networks {
+        margin-top: 2.5rem;
+    }
 }

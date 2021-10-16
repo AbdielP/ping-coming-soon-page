@@ -73,6 +73,10 @@
   -webkit-box-shadow: 0px 5px 15px 2px rgba(79, 125, 243, 0.3);
   -moz-box-shadow: 0px 5px 15px 2px rgba(79, 125, 243, 0.3);
 }
+.form__submit:hover {
+  border: 1px solid #7095f5;
+  background-color: #7095f5;
+}
 
 @media (min-width: 800px) {
   .nav__logo {
@@ -120,11 +124,15 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  padding: 6px;
+  padding: 6.5px;
   color: #4f7df3;
   border: 1px solid rgba(194, 211, 255, 0.5);
   text-align: center;
   vertical-align: middle;
+}
+.footer__icon:hover {
+  color: #fff;
+  background: #4f7df3;
 }
 
 .footer__icon--instagram {
@@ -149,6 +157,11 @@
   color: #3e52a3;
 }
 
+@media (min-width: 800px) {
+  .footer__social-networks {
+    margin-top: 2.5rem;
+  }
+}
 * {
   padding: 0;
   margin: 0;
