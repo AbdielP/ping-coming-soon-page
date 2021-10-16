@@ -54,7 +54,7 @@
 .form__email {
     @include formInput($secondary-pale-blue);
     width: 100%;
-    padding: 12px 35px;
+    padding: 13px 35px;
     border-radius: 25px;
     &::placeholder {
         color: $secondary-pale-blue;
@@ -72,43 +72,55 @@
     font-size: 12px;
     color: #ffffff;
     background: $primary-blue;
-    padding: 12px 35px;
+    padding: 13px 35px;
     border-radius: 25px;
     box-shadow: 0px 5px 15px 2px rgba(79,125,243,0.3);
     -webkit-box-shadow: 0px 5px 15px 2px rgba(79,125,243,0.3);
     -moz-box-shadow: 0px 5px 15px 2px rgba(79,125,243,0.3);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 620px) {
+
+    .nav {
+        margin-top: .7rem;
+        margin-bottom: 1.5rem;
+    }
+    
     .nav__logo {
-        width: 90px;
+        width: 85px;
     }
 
     .nav__title {
-        font-size: 2.5rem;
+        margin-top: 3rem;
+        font-size: 3rem;
     }
 
     .nav__paragraph {
-        font-size: initial;
+        font-size: 1.25rem;
     }
 
     .form {
         flex-direction: row;
-        width: 550px;
+        width: 640px;
+    }
+
+    .form__email-container {
+        width: 68%;
     }
 
     .form__email {
-        width: 360px;
-        height: 45px;
+        width: 100%;
+        height: 55px;
         &::placeholder {
             font-size: 15px;
         }
     }
 
     .form__submit {
+        width: 30%;
+        height: 55px;
         font-size: 15px;
-        height: 45px;
-        width: 170px;
+        margin-left: 20px;
     }
 
     .form__error {

@@ -47,7 +47,7 @@
   padding: 12px 35px;
   margin: 5px;
   width: 100%;
-  padding: 12px 35px;
+  padding: 13px 35px;
   border-radius: 25px;
 }
 .form__email::placeholder {
@@ -67,43 +67,54 @@
   font-size: 12px;
   color: #ffffff;
   background: #4f7df3;
-  padding: 12px 35px;
+  padding: 13px 35px;
   border-radius: 25px;
   box-shadow: 0px 5px 15px 2px rgba(79, 125, 243, 0.3);
   -webkit-box-shadow: 0px 5px 15px 2px rgba(79, 125, 243, 0.3);
   -moz-box-shadow: 0px 5px 15px 2px rgba(79, 125, 243, 0.3);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 620px) {
+  .nav {
+    margin-top: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+
   .nav__logo {
-    width: 90px;
+    width: 85px;
   }
 
   .nav__title {
-    font-size: 2.5rem;
+    margin-top: 3rem;
+    font-size: 3rem;
   }
 
   .nav__paragraph {
-    font-size: initial;
+    font-size: 1.25rem;
   }
 
   .form {
     flex-direction: row;
-    width: 550px;
+    width: 640px;
+  }
+
+  .form__email-container {
+    width: 68%;
   }
 
   .form__email {
-    width: 360px;
-    height: 45px;
+    width: 100%;
+    height: 55px;
   }
   .form__email::placeholder {
     font-size: 15px;
   }
 
   .form__submit {
+    width: 30%;
+    height: 55px;
     font-size: 15px;
-    height: 45px;
-    width: 170px;
+    margin-left: 20px;
   }
 
   .form__error {
@@ -134,19 +145,9 @@
 
 .footer__copy {
   display: block;
-  font-size: 10px;
+  font-size: 13px;
   color: #969696;
   margin: 30px 0;
-}
-
-.attribution {
-  font-size: 10px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.attribution a {
-  color: #3e52a3;
 }
 
 * {
@@ -175,13 +176,13 @@ body {
   width: 300px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 620px) {
   .main {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .main__img {
-    width: 550px;
+    width: 650px;
   }
 }
 
